@@ -4,7 +4,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 /*
 | -------------------------------------------------------------------
 | AUTO-LOADER
-| -------------------------------------------------------------------
+| ---------------------------------Fdriver----------------------------------
 | This file specifies which systems should be loaded by default.
 |
 | In order to keep the framework as light-weight as possible only the
@@ -60,7 +60,7 @@ $autoload['packages'] = array();
 |	$autoload['libraries'] = array('user_agent' => 'ua');
 */
 
-$autoload['libraries'] = array('parser');
+$autoload['libraries'] = array('parser', 'database');
 
 
 /*
@@ -137,4 +137,4 @@ $autoload['language'] = array();
 |	$autoload['model'] = array('first_model' => 'first');
 */
 
-$autoload['model'] = array();
+$autoload['model'] = array('menu','orderitems','orders');
